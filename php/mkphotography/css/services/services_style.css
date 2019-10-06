@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto:400,500,700&display=swap");
+
+.padding_top {
+  padding-top: 140px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .padding_top {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+.padding_bottom {
+  padding-bottom: 140px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .padding_bottom {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #182028;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: #888888;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 28px;
+  color: #182028;
+  font-weight: 600;
+  line-height: 1.222;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 25px;
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus, .button:focus, button:focus, .btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section_tittle {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  .section_tittle {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .section_tittle {
+    margin-bottom: 40px;
+  }
+}
+
+.section_tittle h2 {
+  font-size: 60px;
+  color: #dddfdf;
+  line-height: 54px;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .section_tittle h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .section_tittle h2 {
+    font-size: 45px;
+  }
+}
+
+.section_tittle p {
+  color: #1e2528;
+  text-transform: capitalize;
+  line-height: 27px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .section_tittle p {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .section_tittle p {
+    margin-bottom: 10px;
+  }
+}
+
+.btn_1 {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+.btn_1:after {
+  position: absolute;
+  content: "";
+  left: -50px;
+  top: 11px;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.btn_1:before {
+  position: absolute;
+  content: "";
+  right: -50px;
+  top: 11px;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.btn_1:hover {
+  color: #ff4800 !important;
+}
+
+.btn_1:hover:after {
+  background-color: #ff4800;
+}
+
+.btn_1:hover:before {
+  background-color: #ff4800;
+}
+
+/**************** services css start ****************/
+.our_service .single_offer_img img {
+  width: 100%;
+}
+
+.our_service .single_offer_text {
+  background-color: #fcf7f7;
+  height: 100% !important;
+}
+
+.our_service .single_offer_text span {
+  font-size: 60px !important;
+  margin-bottom: 27px;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .our_service .single_offer_text span {
+    margin-bottom: 10px;
+  }
+}
+
+.our_service .single_offer_text h4 {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 991px) {
+  .our_service .single_offer_text h4 {
+    margin-bottom: 10px;
+  }
+}
+
+.our_service .single_offer_text p {
+  margin-bottom: 40px;
+}
+
+.our_service .single_offer_text .btn_1 {
+  color: #182028;
+}
+
+.our_service .single_offer_text .btn_1:after {
+  background-color: #182028;
+}
+
+.our_service .single_offer_text .btn_1:before {
+  background-color: #182028;
+}
+
+.our_service .single_offer_text .btn_1:hover:after {
+  background-color: #ff4800;
+}
+
+.our_service .single_offer_text .btn_1:hover:before {
+  background-color: #ff4800;
+}
+
+.our_service .wedding {
+  margin-bottom: 30px;
+  padding: 56px 30px 65px;
+}
+
+@media (max-width: 991px) {
+  .our_service .wedding {
+    padding: 25px 15px 30px;
+  }
+}
+
+.our_service .nature {
+  margin-top: 30px;
+  padding: 43px 109px 60px;
+}
+
+@media (max-width: 991px) {
+  .our_service .nature {
+    padding: 25px 15px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .our_service .single_offer_img {
+    margin-bottom: 30px;
+  }
+}
