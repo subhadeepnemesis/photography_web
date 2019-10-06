@@ -58,6 +58,35 @@
     </div>
     <!-- Gallery Area End -->
 
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
+            <div class="row alime-portfolio">
+            <?php
+                $maternity_dir = 'img/assets/maternity/';
+                $files = glob($maternity_dir.'*.{png}', GLOB_BRACE);
+                if (isset($files) && count($files) > 0){
+                    foreach($files as $key=>$val){
+                        // <!-- Single Gallery Item -->
+                        $each_files = glob($maternity_dir.($key+1).'/*.{jpg}', GLOB_BRACE);
+                        $each_counter = count($each_files);
+                        echo '<div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="single-portfolio-content">
+                                    <img src='.$val.' alt="">
+                                    <div class="hover-content">
+                                      <a href='.$each_files[0].' class="portfolio-img">+</a>
+                                      <span style="display:none;">maternity_'.($key+1).'_'.$each_counter.'</span>
+                                    </div>
+                                </div>
+                            </div>';
+                    }
+                }
+            ?>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Area End -->
+
     <!-- Follow Area Start -->
     <?php include 'include/insta_follow.php'; ?>
     <!-- Follow Area End -->
