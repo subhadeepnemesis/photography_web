@@ -34,18 +34,23 @@
         <div class="container-fluid">
             <div class="row alime-portfolio">
             <?php
-                require('max_images.php');
-                for($i=1;$i<=5;$i++){
-                    // <!-- Single Gallery Item -->
-                    echo '<div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="single-portfolio-content">
-                            <img src="img/assets/pre-wedding/'.$i.'.png" alt="">
-                            <div class="hover-content">
-                                <a href="img/assets/pre-wedding/'.$i.'/1.jpg" class="portfolio-img">+</a>
-                                <span style="display:none;">pre-wedding_'.$i.'_'.$preweddingmax[$i].'</span>
-                            </div>
-                        </div>
-                    </div>';
+                $prewedding_dir = 'img/assets/pre-wedding/';
+                $files = glob($prewedding_dir.'*.{png}', GLOB_BRACE);
+                if (isset($files) && count($files) > 0){
+                    foreach($files as $key=>$val){
+                        // <!-- Single Gallery Item -->
+                        $each_files = glob($prewedding_dir.($key+1).'/*.{jpg}', GLOB_BRACE);
+                        $each_counter = count($each_files);
+                        echo '<div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="single-portfolio-content">
+                                    <img src='.$val.' alt="">
+                                    <div class="hover-content">
+                                      <a href='.$each_files[0].' class="portfolio-img">+</a>
+                                      <span style="display:none;">pre-wedding_'.($key+1).'_'.$each_counter.'</span>
+                                    </div>
+                                </div>
+                            </div>';
+                    }
                 }
             ?>
             </div>
