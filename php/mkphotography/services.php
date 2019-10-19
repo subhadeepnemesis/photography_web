@@ -10,21 +10,20 @@
             </div>
         </div>
         <?php
-            $services = array( 'wedding'=>2,'pre-wedding'=>5,'maternity'=>4,'new-born'=>3,'kids'=>7, "jewellery"=>3, "food"=>4);
+            $services = array( 'wedding'=>2,'pre-wedding'=>5,'maternity'=>4,'new-born'=>3,'kids'=>7, "jewellery"=>1, "food"=>4);
             foreach($services as $key=>$val){
                 echo '<div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="single_offer_text text-center wedding">
                             <span class="flaticon-love-and-romance"></span>
-                            <h4>'.$key.' Photography</h4>
+                            <h4><a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'">'.$key.' Photography</a></h4>
                             <p>World the end of summer the sweltering heat makes human
                                 sweat in the night and man plants and trees wilt even</p>
-                            <a href="'.(($key == 'food' || $key == 'jewellery')? 'other': $key).'.php" class="btn_1">read more</a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-6">
                         <div class="single_offer_img d-none d-md-block">
-                            <img src="img/assets/'.$key.'/'.rand(1,$val).'.png" alt="">
+                            <a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'"><img src="img/assets/'.$key.'/'.rand(1,$val).'.png" alt=""></a>
                         </div>
                     </div>
                 </div>';
@@ -62,3 +61,8 @@
     </div>
 </section>
 <!--::our_service part end::-->
+<style>
+    .services-link:hover{
+        color: red;
+    }
+</style>
