@@ -63,7 +63,7 @@
                     <!-- Contact Info -->
                     <div class="contact-info mb-30">
                         <p>Visit Us</p>
-                        <p>Mandar Kashikar</p>
+                        <p style="font-size: x-large;"><strong>Mandar Kashikar</strong></p>
                         <p>Flat No 22, Aditya Residency, Pimpri Chinchwad Link Road,</p>
                         <p>Near Gawade Petrol Pump, Chinchwad, Pune 411033</p>
                     </div>
@@ -72,13 +72,13 @@
                     <!-- Contact Info -->
                     <div class="contact-info mb-30">
                         <p>Email</p>
-                        <a href="mailto:mkphotography2787@gmail.com">mkphotography2787@gmail.com</a>
-                        <a href="mailto:enquiry@mkphotography.in">enquiry@mkphotography.in</a>
+                        <a href="mailto:mkphotography2787@gmail.com"><strong>mkphotography2787@gmail.com</strong></a>
+                        <a href="mailto:enquiry@mkphotography.in"><strong>enquiry@mkphotography.in</strong></a>
                     </div>
                     <!-- Contact Info -->
                     <div class="contact-info mb-30">
                         <p>Call Us</p>
-                        <a href="#">9766121189</a>
+                        <a href="#"><strong>9766121189</strong></a>
                     </div>
                 </div>
             </div>
