@@ -3,8 +3,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Follow Instagram</h2>
-                        <p>@mkphotography2787</p>
+                        <h2>Follow @Instagram</h2>
+                        <p><a class='insta_header' href="https://www.instagram.com/mkphotography2787/">@mkphotography2787</a></p>
                     </div>
                 </div>
             </div>
@@ -23,9 +23,8 @@
                         echo '<div class="single-instagram-item">
                                 <img src="'.$resolution->thumbnail->url.'" alt="">
                                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                                    <a href="#">
+                                    <a href="'.$img->link.'">
                                         <i class="ti-instagram" aria-hidden="true"></i>
-                                        <span>'.$img->caption->text.'</span>
                                     </a>
                                 </div>
                             </div>';
@@ -35,3 +34,9 @@
             }
         ?>
     </div>
+
+<style>
+    .insta_header:hover{
+        color: red;
+    }
+</style>
