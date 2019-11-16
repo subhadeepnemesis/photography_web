@@ -42,14 +42,14 @@
                         $each_files = glob($wedding_dir.($key+1).'/*.{jpg}', GLOB_BRACE);
                         $each_counter = count($each_files);
                         echo '<div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="single-portfolio-content">
-                                <img src='.$val.' alt="">
-                                <div class="hover-content">
-                                    <a href='.$each_files[0].' class="portfolio-img">+</a>
-                                    <span style="display:none;">wedding_'.($key+1).'_'.$each_counter.'</span>
+                                <div class="single-portfolio-content">
+                                    <img src='.$val.' alt="">
+                                    <div class="hover-content">
+                                        <a href='.$each_files[0].' class="portfolio-img">+</a>
+                                        <span style="display:none;">wedding_'.($key+1).'_'.$each_counter.'</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>';
+                            </div>';
                     }
                 }
             ?>

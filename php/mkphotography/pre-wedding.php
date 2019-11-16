@@ -45,8 +45,8 @@
                                 <div class="single-portfolio-content">
                                     <img src='.$val.' alt="">
                                     <div class="hover-content">
-                                      <a href='.$each_files[0].' class="portfolio-img">+</a>
-                                      <span style="display:none;">pre-wedding_'.($key+1).'_'.$each_counter.'</span>
+                                        <a href='.$each_files[0].' class="portfolio-img">+</a>
+                                        <span style="display:none;">pre-wedding_'.($key+1).'_'.$each_counter.'</span>
                                     </div>
                                 </div>
                             </div>';
