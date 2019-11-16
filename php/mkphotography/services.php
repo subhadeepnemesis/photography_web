@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-8 col-md-6">
                         <div class="single_offer_img d-none d-md-block">
-                            <a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'"><img src="img/assets/'.$key.'/'.rand(1,$val).'.png" alt=""></a>
+                            <a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'"><img src="img/assets/'.$key.'/'.rand(1,$val).'.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>';
