@@ -35,7 +35,7 @@
             <div class="row alime-portfolio">
             <?php
                 $wedding_dir = 'img/assets/wedding/';
-                $files = glob($wedding_dir.'*.{png}', GLOB_BRACE);
+                $files = glob($wedding_dir.'*.{jpg}', GLOB_BRACE);
                 if (isset($files) && count($files) > 0){
                     foreach($files as $key=>$val){
                         // <!-- Single Gallery Item -->
