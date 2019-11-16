@@ -80,7 +80,8 @@ body {
 	display:block;
 	border:none;
 /*	background-color: SlateBlue;*/
-	background:#f8ae45;
+	/*background:#f8ae45;*/
+	background: tomato;
 	color:#FFFFFF;
 	padding:12px 25px;
 	cursor:pointer;
@@ -88,6 +89,7 @@ body {
 	font-weight:bold;
 }
 .ccbtn:hover{
-	background:#d8850e;
+	/*background:#d8850e;*/
+	background: hsl(0, 100%, 25%);
 
 }
