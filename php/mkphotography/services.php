@@ -10,7 +10,7 @@
             </div>
         </div>
         <?php
-            $services = array( 'wedding'=>2,'pre-wedding'=>5,'maternity'=>4,'new-born'=>3,'kids'=>7, "jewellery"=>1, "food"=>4);
+            $services = array( 'wedding'=>5,'pre-wedding'=>5,'maternity'=>5,'new-born'=>3,'kids'=>7, "jewellery"=>1, "food"=>4);
             foreach($services as $key=>$val){
                 echo '<div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-8 col-md-6">
                         <div class="single_offer_img d-none d-md-block">
-                            <a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'"><img src="img/assets/'.$key.'/'.rand(1,$val).'.png" alt=""></a>
+                            <a class="services-link" href="'.(($key == 'jewellery' || $key == 'food')? 'other' : $key).'.php'.'"><img src="img/assets/'.$key.'/'.rand(1,$val).'.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>';

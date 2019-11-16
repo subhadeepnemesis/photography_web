@@ -35,7 +35,7 @@
             <div class="row alime-portfolio">
             <?php
                 $maternity_dir = 'img/assets/maternity/';
-                $files = glob($maternity_dir.'*.{png}', GLOB_BRACE);
+                $files = glob($maternity_dir.'*.{jpg}', GLOB_BRACE);
                 if (isset($files) && count($files) > 0){
                     foreach($files as $key=>$val){
                         // <!-- Single Gallery Item -->

@@ -35,7 +35,7 @@
             <div class="row alime-portfolio">
             <?php
                 $other_dir = 'img/assets/other/';
-                $files = glob($other_dir.'*.{png}', GLOB_BRACE);
+                $files = glob($other_dir.'*.{jpg}', GLOB_BRACE);
                 if (isset($files) && count($files) > 0){
                     foreach($files as $key=>$val){
                         // <!-- Single Gallery Item -->
