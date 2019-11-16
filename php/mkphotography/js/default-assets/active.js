@@ -249,6 +249,7 @@
     // ****************************
     // :: disable right click
     // ****************************
+    
     $(document).bind('contextmenu', function(e) {
         e.preventDefault();
     });
