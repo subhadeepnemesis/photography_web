@@ -246,4 +246,11 @@
             e.preventDefault();
     });
 
+    // ****************************
+    // :: disable right click
+    // ****************************
+    $(document).bind('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
 })(jQuery);
